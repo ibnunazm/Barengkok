@@ -1,0 +1,422 @@
+{
+	"info": {
+		"_postman_id": "b419a1be-ea9a-40d0-887c-c1c8a7ca3536",
+		"name": "Barengkok",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40115702",
+		"_collection_link": "https://lunar-water-363973-1.postman.co/workspace/Team-Workspace~f1426fe5-e0ec-465b-81e5-0005f1076276/collection/40115702-b419a1be-ea9a-40d0-887c-c1c8a7ca3536?action=share&source=collection_link&creator=40115702"
+	},
+	"item": [
+		{
+			"name": "getAllLampMonitoring",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "E7r$wT!zKq@2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cxianz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/lamp-monitoring",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"lamp-monitoring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllTankMonitoring",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "E7r$wT!zKq@2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cxianz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/tank-monitoring",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"tank-monitoring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStatusLamp",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "E7r$wT!zKq@2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cxianz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lamp_id\": 2,\r\n    \"battery_capacity\" : 5,\r\n    \"input_current\" : 2,\r\n    \"light_intensity\" : 36,\r\n    \"battery_usage\" : 39\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/lamp-monitoring",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"lamp-monitoring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStatusTank",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "E7r$wT!zKq@2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cxianz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tank_id\": 1,\r\n    \"turbidity\": 60,\r\n    \"ph\": 6.52,\r\n    \"volume\": 152\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/tank-monitoring",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"tank-monitoring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createLamp",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "E7r$wT!zKq@2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cxianz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lampu Penerangan Umum 7\",\r\n    \"latitude\" : -6.427359, \r\n    \"longitude\" : 106.481515\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/lamp",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"lamp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTank",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "E7r$wT!zKq@2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cxianz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Toren Air 1\",\r\n    \"latitude\" : -6.427359,\r\n    \"longitude\" : 106.481515\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/tank",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"tank"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateLampLocation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lamp_id\": 1,\r\n    \"latitude\" : -6.427359,\r\n    \"longitude\" : 106.481515\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/lamp",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"lamp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTankLocation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tank_id\": 1,\r\n    \"latitude\" : -6.427359,\r\n    \"longitude\" : 106.481515\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/tank",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"tank"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllLamp",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "E7r$wT!zKq@2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cxianz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/lamp",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"lamp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllTank",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "E7r$wT!zKq@2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cxianz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/tank",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"tank"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://smartvillagebarengkok.com/api/",
+					"protocol": "https",
+					"host": [
+						"smartvillagebarengkok",
+						"com"
+					],
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:8000",
+			"type": "default",
+			"disabled": true
+		},
+		{
+			"key": "baseURL",
+			"value": "http://202.157.187.135:8000/",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "baseURL",
+			"value": "https://smartvillagebarengkok.com/api/",
+			"type": "string"
+		},
+		{
+			"key": "baseURL",
+			"value": "https://wjcl7fg3-8000.asse.devtunnels.ms",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}
